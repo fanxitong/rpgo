@@ -1,0 +1,23 @@
+import { fileURLToPath, URL } from 'node:url'
+
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import vueDevTools from 'vite-plugin-vue-devtools'
+import tailwindcss from '@tailwindcss/vite'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [vue(), vueDevTools(), tailwindcss()],
+  resolve: {
+    alias: {
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+  },
+  server: {
+    // The app loads this address during `mygo dev` (devUrl in mygo.json).
+    port: 5173,
+    strictPort: true,
+    // The development app and the packaged builds are not the page's.
+    watch: { ignored: ['**/.mygo/**', '**/build/**'] },
+  },
+})
