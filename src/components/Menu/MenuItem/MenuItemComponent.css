@@ -1,0 +1,70 @@
+.menu-entry {
+  display: flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 10px;
+  color: var(--menu-entry-text);
+  white-space: nowrap;
+  cursor: default;
+}
+
+.menu-entry:hover:not(.is-disabled) {
+  background: var(--menu-entry-hover-bg);
+}
+
+.menu-entry.is-disabled {
+  color: var(--menu-entry-disabled-text);
+}
+
+/* 勾选位固定占一个字符宽并居中,未选中时呈现空白字符,使各子项标签对齐 */
+.menu-entry-check {
+  flex: none;
+  width: 1em;
+  margin-right: 4px;
+  text-align: center;
+}
+
+.menu-entry-label {
+  flex: 1;
+}
+
+/* 行内模式:置于水平按钮行内,按内容宽度居中(标签不拉伸,勾选位与标签整体居中) */
+.menu-entry.is-inline {
+  justify-content: center;
+  padding: 0 12px;
+}
+
+.menu-entry.is-inline .menu-entry-label {
+  flex: none;
+}
+
+/* 行尾删除按钮:默认不抢眼,悬停时泛红 */
+.menu-entry-delete {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: var(--menu-entry-shortcut);
+  font: inherit;
+  line-height: 1;
+  cursor: default;
+}
+
+.menu-entry-delete:hover {
+  background: rgb(192 57 43 / 12%);
+  color: #c0392b;
+}
+
+.menu-entry-shortcut {
+  margin-left: 16px;
+  color: var(--menu-entry-shortcut);
+}
+
+.menu-entry-separator {
+  height: 1px;
+  margin: 3px 0;
+  background: var(--menu-separator);
+}

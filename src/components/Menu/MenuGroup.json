@@ -1,0 +1,154 @@
+[
+  {
+    "id": "file",
+    "label": "文件",
+    "items": [
+      {
+        "type": "action",
+        "id": "file.new",
+        "label": "新建项目",
+        "shortcut": "Ctrl+N",
+        "dialog": true
+      },
+      {
+        "type": "action",
+        "id": "file.open",
+        "label": "打开项目",
+        "shortcut": "Ctrl+O",
+        "dialog": true
+      },
+      { "type": "action", "id": "file.close", "label": "关闭项目" },
+      { "type": "action", "id": "file.save", "label": "保存项目", "shortcut": "Ctrl+S" },
+      { "type": "separator" },
+      { "type": "action", "id": "file.deploy", "label": "部署", "dialog": true },
+      { "type": "action", "id": "file.exit", "label": "退出" }
+    ]
+  },
+  {
+    "id": "edit",
+    "label": "编辑",
+    "items": [
+      { "type": "action", "id": "edit.undo", "label": "撤销", "shortcut": "Ctrl+Z" },
+      { "type": "separator" },
+      { "type": "action", "id": "edit.cut", "label": "剪切", "shortcut": "Ctrl+X" },
+      { "type": "action", "id": "edit.copy", "label": "复制", "shortcut": "Ctrl+C" },
+      { "type": "action", "id": "edit.paste", "label": "粘贴", "shortcut": "Ctrl+V" },
+      { "type": "action", "id": "edit.delete", "label": "删除", "shortcut": "Del" },
+      { "type": "separator" },
+      {
+        "type": "action",
+        "id": "edit.find",
+        "label": "查找",
+        "shortcut": "Ctrl+F",
+        "dialog": true
+      },
+      { "type": "action", "id": "edit.findNext", "label": "查找下一个", "shortcut": "F3" },
+      { "type": "action", "id": "edit.findPrevious", "label": "查找上一个", "shortcut": "Shift+F3" }
+    ]
+  },
+  {
+    "id": "mode",
+    "label": "模式",
+    "items": [
+      { "type": "radio", "id": "mode.map", "label": "地图", "shortcut": "F5", "group": "mode" },
+      { "type": "radio", "id": "mode.event", "label": "事件", "shortcut": "F6", "group": "mode" },
+      { "type": "separator" },
+      { "type": "check", "id": "mode.passability", "label": "显示通行性", "shortcut": "F7" }
+    ]
+  },
+  {
+    "id": "draw",
+    "label": "绘图",
+    "items": [
+      { "type": "radio", "id": "draw.pencil", "label": "铅笔", "group": "draw" },
+      { "type": "radio", "id": "draw.eraser", "label": "橡皮擦", "group": "draw" },
+      { "type": "radio", "id": "draw.rectangle", "label": "矩形", "group": "draw" },
+      { "type": "radio", "id": "draw.ellipse", "label": "椭圆", "group": "draw" },
+      { "type": "radio", "id": "draw.fill", "label": "填充", "group": "draw" },
+      { "type": "radio", "id": "draw.shadow", "label": "影笔", "group": "draw" }
+    ]
+  },
+  {
+    "id": "layer",
+    "label": "层",
+    "items": [
+      {
+        "type": "check",
+        "id": "layer.edit",
+        "label": "编辑",
+        "mark": "*",
+        "row": "layer-buttons",
+        "keepOpen": true
+      },
+      {
+        "type": "action",
+        "id": "layer.add",
+        "label": "新增",
+        "mark": "*",
+        "row": "layer-buttons",
+        "keepOpen": true
+      },
+      { "type": "separator" }
+    ]
+  },
+  {
+    "id": "zoom",
+    "label": "缩放",
+    "items": [
+      { "type": "action", "id": "zoom.in", "label": "放大", "shortcut": "Ctrl++" },
+      { "type": "action", "id": "zoom.out", "label": "缩小", "shortcut": "Ctrl+-" },
+      {
+        "type": "action",
+        "id": "zoom.reset",
+        "label": "原始大小",
+        "shortcut": "Ctrl+0",
+        "disabled": true
+      }
+    ]
+  },
+  {
+    "id": "tools",
+    "label": "工具",
+    "items": [
+      {
+        "type": "action",
+        "id": "tools.database",
+        "label": "数据库",
+        "shortcut": "F9",
+        "dialog": true
+      },
+      {
+        "type": "action",
+        "id": "tools.pluginManager",
+        "label": "插件管理",
+        "shortcut": "F10",
+        "dialog": true
+      },
+      { "type": "separator" },
+      { "type": "action", "id": "tools.soundTest", "label": "声音测试", "dialog": true },
+      { "type": "action", "id": "tools.eventSearch", "label": "搜索事件", "dialog": true },
+      { "type": "action", "id": "tools.materialManager", "label": "素材管理", "dialog": true },
+      { "type": "action", "id": "tools.characterGenerator", "label": "人物生成器", "dialog": true },
+      { "type": "action", "id": "tools.options", "label": "选项", "dialog": true }
+    ]
+  },
+  {
+    "id": "game",
+    "label": "游戏",
+    "items": [
+      { "type": "action", "id": "game.test", "label": "测试游戏", "shortcut": "Ctrl+R" },
+      { "type": "check", "id": "game.skipTitle", "label": "跳过标题画面" },
+      { "type": "separator" },
+      { "type": "action", "id": "game.openProjectFolder", "label": "打开项目文件夹" },
+      { "type": "action", "id": "game.updateCoreScripts", "label": "更新核心脚本", "dialog": true }
+    ]
+  },
+  {
+    "id": "help",
+    "label": "帮助",
+    "items": [
+      { "type": "action", "id": "help.contents", "label": "文档", "shortcut": "F1" },
+      { "type": "action", "id": "help.about", "label": "关于", "dialog": true }
+    ]
+  }
+]

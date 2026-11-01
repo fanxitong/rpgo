@@ -1,0 +1,51 @@
+.menu-dropdown {
+  position: relative;
+}
+
+.menu-dropdown-title {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+  border: none;
+  background: transparent;
+  color: var(--menu-title-text);
+  font: inherit;
+  cursor: default;
+}
+
+.menu-dropdown-title:hover:not(.is-open) {
+  background: var(--menu-title-hover-bg);
+}
+
+.menu-dropdown-title.is-open {
+  background: var(--menu-title-active-bg);
+  color: #ffffff;
+}
+
+.menu-dropdown-title:focus-visible {
+  outline: 1px solid var(--menu-title-active-bg);
+  outline-offset: -1px;
+}
+
+.menu-dropdown-panel {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  min-width: 168px;
+  margin: 0;
+  padding: 2px 0;
+  list-style: none;
+  background: var(--menu-panel-bg);
+  border: 1px solid var(--menu-panel-border);
+  box-shadow: 0 2px 8px rgb(15 40 70 / 18%);
+}
+
+/* 水平按钮行:行内项作为一组整体居中,如层菜单的编辑/新增 */
+.menu-entry-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 22px;
+}

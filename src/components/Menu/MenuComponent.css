@@ -1,0 +1,24 @@
+.menu-component {
+  --menu-bar-bg-top: #e3effd;
+  --menu-bar-bg-bottom: #d2ddea;
+  --menu-title-text: #1f2a37;
+  --menu-title-hover-bg: #cfe0f2;
+  --menu-title-active-bg: #0477ea;
+  --menu-panel-bg: #e5f1ff;
+  --menu-panel-border: #92b4d9;
+  --menu-entry-text: #1f2a37;
+  --menu-entry-shortcut: #5f6b7a;
+  --menu-entry-hover-bg: #cfe3f8;
+  --menu-entry-disabled-text: #98a3af;
+  --menu-separator: #a9bdd0;
+
+  position: relative;
+  z-index: 100;
+  display: flex;
+  align-items: stretch;
+  height: 26px;
+  background: linear-gradient(to bottom, var(--menu-bar-bg-top), var(--menu-bar-bg-bottom));
+  font-size: 13px;
+  line-height: 1;
+  user-select: none;
+}

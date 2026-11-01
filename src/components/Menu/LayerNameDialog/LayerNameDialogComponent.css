@@ -1,0 +1,83 @@
+/* 配色沿用 MenuComponent.css 的 CSS 变量(对话框渲染在 .menu-component 内,变量可继承) */
+.layer-name-dialog-mask {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(15 40 70 / 35%);
+}
+
+.layer-name-dialog {
+  width: 260px;
+  background: var(--menu-panel-bg);
+  border: 1px solid var(--menu-panel-border);
+  box-shadow: 0 4px 16px rgb(15 40 70 / 25%);
+}
+
+.layer-name-dialog-title {
+  padding: 4px 10px;
+  background: var(--menu-title-active-bg);
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.layer-name-dialog-body {
+  padding: 12px 10px 8px;
+}
+
+.layer-name-dialog-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--menu-entry-text);
+  font-size: 13px;
+}
+
+.layer-name-dialog-input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3px 5px;
+  border: 1px solid var(--menu-panel-border);
+  background: #ffffff;
+  color: var(--menu-entry-text);
+  font: inherit;
+  font-size: 13px;
+}
+
+.layer-name-dialog-input:focus {
+  border-color: var(--menu-title-active-bg);
+  outline: none;
+}
+
+.layer-name-dialog-hint {
+  margin: 6px 0 0;
+  color: var(--menu-entry-shortcut);
+  font-size: 12px;
+}
+
+.layer-name-dialog-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 8px 10px 10px;
+}
+
+.layer-name-dialog-button {
+  min-width: 64px;
+  padding: 3px 0;
+  border: 1px solid #7ba7cc;
+  background: linear-gradient(to bottom, #fdfefe, #d6e8f7);
+  color: var(--menu-entry-text);
+  font: inherit;
+  font-size: 13px;
+  cursor: default;
+}
+
+.layer-name-dialog-button:hover {
+  background: linear-gradient(to bottom, #eaf4fd, #c4dcf2);
+}
+
+.layer-name-dialog-button:active {
+  background: linear-gradient(to bottom, #c4dcf2, #eaf4fd);
+}
