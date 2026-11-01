@@ -4,13 +4,13 @@
 
 ## 为什么有本项目 ==> 源于对 RPG Maker Unite 的失望
 
-我朋友一直喜欢玩《重装机兵》,但觉得里面的剧情不完美,并不符合预期。希望有机会能重新塑造一个自己的游戏。而我与他一样,虽觉得游戏结局不完美但也算有趣。直到他后来找到我,希望我们重制《重装机兵》,于是我们先尝试了`RPG Maker MV`、`RPG Maker MZ`,但其编辑器不开源、不免费且插件系统不尽人意,最终导致项目搁浅。后来听说出了`RPG Maker Unite`,于是又尝试了`RPG Maker Unite`并抱有很大期望,但其引擎未能与`Unity`良好结合导致卡顿频频,问题不断,并且Unity后来与Unity中国分家(二次搁浅~)。后来我本科即将毕业,正好需要做一个毕业设计,于是我决定自己写一个类似的游戏编辑器来解决我们的问题,并将 TA 取名为`rpgo`。
+我朋友一直喜欢玩《重装机兵》,但觉得里面的剧情不完美,并不符合预期。希望有机会能重新塑造一个自己的游戏。而我与他一样,虽觉得游戏结局不完美但也算有趣。直到他后来找到我,希望我们重制《重装机兵》,于是我们先尝试了`RPG Maker MV`、`RPG Maker MZ`,但其编辑器不开源、不免费且插件系统不尽人意,最终导致项目搁浅。后来听说出了`RPG Maker Unite`,于是又尝试了`RPG Maker Unite`并抱有很大期望,但其引擎未能与`Unity`良好结合导致卡顿频频,问题不断,并且Unity后来与Unity中国分家(二次搁浅~)。后来我本科即将毕业,正好需要做一个毕业设计,于是我决定自己写一个类似的游戏编辑器来解决我们的问题,并将 TA 取名为`rpgo`。目前本项目主要借鉴`RPG Maker MV/MZ`实现;尽量贴近其操作方式,并添加自己的一些设计。
 
 ## 技术栈
 
 - ui:[vue](https://github.com/vuejs/core)
 - 框架:[mygo](https://github.com/egoist/mygo)
-- 编辑器内部渲染:[cocos2d-html5](https://github.com/cocos2d/cocos2d-html5)
+- 编辑器内部渲染:[cocos2d-html5](https://github.com/fansforks/cocos2d-html5)
 - ...
 
 ## 注意
