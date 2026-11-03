@@ -75,9 +75,9 @@ rpgo/
 ```
 components/
 └── <Name>Component/                    # 组件名
-    ├── <ComponentName>Component.vue/   # 组件实现,含css导入及vue部分操作
-    ├── <ComponentName>.css/   # 组件样式实现(若组件样式足够简单,则该项为可选)
-    ├── <ComponentName>.ts/             # 组件中的逻辑部分(若组件逻辑足够简单,则该项为可选)
+    ├── <Name>Component.vue/   # 组件实现,含css导入及vue部分操作
+    ├── <Name>.css/   # 组件样式实现(若组件样式足够简单,则该项为可选)
+    ├── <Name>.ts/             # 组件中的逻辑部分(若组件逻辑足够简单,则该项为可选)
     └── index.ts/                       # 导出组件
 ```
 
