@@ -74,19 +74,19 @@ rpgo/
 
 ```
 components/
-└── <ComponentName>/                    # 组件名
+└── <Name>Component/                    # 组件名
     ├── <ComponentName>Component.vue/   # 组件实现,含css导入及vue部分操作
-    ├── <ComponentName>Component.css/   # 组件样式实现(若组件样式足够简单,则该项为可选)
+    ├── <ComponentName>.css/   # 组件样式实现(若组件样式足够简单,则该项为可选)
     ├── <ComponentName>.ts/             # 组件中的逻辑部分(若组件逻辑足够简单,则该项为可选)
     └── index.ts/                       # 导出组件
 ```
 
 ```
 views/
-└── <ViewName>/                         # 视图名
-    ├── <ViewName>Component.vue/        # 视图实现,含css导入及vue部分操作
-    ├── <ViewName>Component.css/        # 视图样式实现(若视图样式足够简单,则该项为可选)
-    ├── <ViewName>.ts/                  # 视图中的逻辑部分(若视图逻辑足够简单,则该项为可选)
+└── <Name>View/                         # 视图名
+    ├── <Name>View.vue/                 # 视图实现,含css导入及vue部分操作
+    ├── <Name>.css/                     # 视图样式实现(若视图样式足够简单,则该项为可选)
+    ├── <Name>.ts/                      # 视图中的逻辑部分(若视图逻辑足够简单,则该项为可选)
     └── index.ts/                       # 导出视图
 ```
 
